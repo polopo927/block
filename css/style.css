@@ -1,0 +1,66 @@
+body {
+	height: 100vh;
+}
+
+.development {
+	padding: 80px 105px;
+	margin-bottom: 130px;
+}
+
+.development__subtitle {
+	font-family: 'OpenSans-ExtraBold';
+	font-weight: 800;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(90deg, #4343ff 0%, #f96d6d 100%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+	color: Gradients/Pink 100% Text;
+	margin-bottom: 22px;
+}
+
+.development__title {
+	font-family: 'Roboto-Regular';
+	font-weight: 400;
+	margin: 0 auto;
+	width: 845px;
+	text-align: center;
+	font-size: 46px;
+	line-height: 120%;
+	color: #110C11;
+	margin-bottom: 80px;
+}
+
+.development-info {
+	display: grid;
+	grid-template-columns: 387px 387px 387px;
+	justify-content: center;
+	grid-gap: 35px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.development-info__card {
+	padding: 22px;
+}
+
+.development-info__card-title {
+	font-family: 'OpenSans-Bold';
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 23px;
+	color: #110C11;
+	margin-bottom: 28px;
+}
+
+.development-info__card-text {
+	font-family: 'OpenSans-Regular';
+	font-weight: 400;
+	width: 343px;
+	font-size: 17px;
+	line-height: 26px;
+	color: #5C5C5C;
+}
