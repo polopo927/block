@@ -1,5 +1,7 @@
 body {
 	min-height: 100vh;
+	padding: 0 10px;
+	margin: 0 auto;
 }
 
 .development {
@@ -65,9 +67,137 @@ body {
 	color: #5C5C5C;
 }
 
+.conditions {
+	font-family: 'Roboto';
+	color: #56565A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 135px;
+}
+
+.conditions__items {
+	margin-right: 60px;
+}
+
+.conditions__item-title {
+	font-family: 'RobotoCondensed';
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.conditions__item-text {
+	width: 513px;
+	height: auto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+
+.conditions__item-btn+.conditions__item-btn {
+	margin-left: 15px;
+}
+
+.conditions__item-btn {
+	background-color: #0A467E;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	border: none;
+	text-align: center;
+	padding: 12px 40px;
+}
+
+.conditions__cards {
+	display: grid;
+	grid-template-columns: 270px 270px;
+	align-items: center;
+	gap: 15px;
+}
+
+.conditions__card:nth-child(2) {
+	grid-row: span 2;
+}
+
+.conditions__card {
+	background-color: #F7F7F7;
+	padding: 22px;
+	text-align: center;
+	border: 1px solid #EDEDED;
+	border-radius: 5px;
+	position: relative;
+}
+
+.conditions__card--business {
+	padding: 108px 22px;
+}
+
+.conditions__card--income::before {
+	content: '';
+	position: absolute;
+	background-image: url('/img/icons/Income.svg');
+	width: 30px;
+	height: 30px;
+	left: 120px;
+}
+
+.conditions__card--business::before {
+	content: '';
+	position: absolute;
+	background-image: url('/img/icons/Business.svg');
+	width: 30px;
+	height: 30px;
+	left: 120px;
+}
+
+.conditions__card--discount::before {
+	content: '';
+	position: absolute;
+	background-image: url('/img/icons/Discount.svg');
+	width: 30px;
+	height: 30px;
+	left: 120px;
+}
+
+.conditions__card-title {
+	width: 187px;
+	height: auto;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 40px auto 0;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.conditions__card-title--discount {
+	width: 226px;
+}
+
+.conditions__card-text {
+	height: auto;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	margin-top: 15px;
+}
+
+
 @media (max-width: 1245px) {
 	.development__cards {
 		grid-template-columns: 387px 387px;
+	}
+
+	.conditions {
+		flex-direction: column;
+	}
+
+	.conditions__items {
+		margin: 0 40px 20px 0;
 	}
 }
 
@@ -83,9 +213,11 @@ body {
 		width: 300px;
 		font-size: 30px;
 	}
+
 	.development__cards {
 		grid-template-columns: 250px 250px;
 	}
+
 	.development__card-text {
 		width: 230px;
 	}
@@ -96,10 +228,38 @@ body {
 		width: 250px;
 		font-size: 26px;
 	}
+
 	.development__cards {
 		grid-template-columns: 250px;
 	}
 
+	.conditions__items {
+		margin: 20px 0;
+	}
+
+	.conditions__item-title {
+		text-align: center;
+		font-size: 26px;
+		line-height: 28px;
+	}
+	.conditions__item-text {
+		width: 300px;
+		text-align: center;
+	}
+	.conditions__item-btn + .conditions__item-btn {
+		margin-left: 65px;
+	}
+	.conditions__item-btn {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 10px 30px;
+	}
+	.conditions__cards {
+		grid-template-columns: 270px;
+	}
+	.conditions__card--business {
+		padding: 22px;
+	}
 }
 
 @media (max-width: 470px) {
