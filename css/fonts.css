@@ -1,5 +1,5 @@
 @font-face{
-	font-family: 'OpenSans-Regular';
+	font-family: 'OpenSans';
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -9,7 +9,7 @@
 		 url('../fonts/OpenSans-Regular.ttf') format('ttf'),
   }
 @font-face{
-	font-family: 'OpenSans-Bold';
+	font-family: 'OpenSans';
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -19,7 +19,7 @@
 		 url('../fonts/OpenSans-Bold.ttf') format('ttf'),
   }
 @font-face{
-	font-family: 'OpenSans-ExtraBold';
+	font-family: 'OpenSans';
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
@@ -29,7 +29,7 @@
 		 url('../fonts/OpenSans-ExtraBold.ttf') format('ttf'),
   }
 @font-face{
-	font-family: 'Roboto-Regular';
+	font-family: 'Roboto';
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -39,7 +39,7 @@
 		 url('../fonts/Roboto-Regular.ttf') format('ttf'),
   }
 @font-face{
-	font-family: 'Roboto-Bold';
+	font-family: 'Roboto';
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -49,7 +49,7 @@
 		 url('../fonts/Roboto-Bold.ttf') format('ttf'),
   }
 @font-face{
-	font-family: 'RobotoCondensed-SemiBold';
+	font-family: 'RobotoCondensed';
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -59,7 +59,7 @@
 		 url('../fonts/RobotoCondensed-SemiBold.ttf') format('ttf'),
   }
 @font-face{
-	font-family: 'RobotoCondensed-Bold';
+	font-family: 'RobotoCondensed';
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
