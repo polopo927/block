@@ -113,17 +113,18 @@ body {
 }
 
 .conditions__cards {
-	display: grid;
-	grid-template-columns: 270px 270px;
-	align-items: center;
+	display: flex;
 	gap: 15px;
 }
 
-.conditions__card:nth-child(2) {
-	grid-row: span 2;
+.conditions__cards-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .conditions__card {
+	width: 270px;
 	background-color: #F7F7F7;
 	padding: 22px;
 	text-align: center;
@@ -133,34 +134,30 @@ body {
 }
 
 .conditions__card--business {
-	padding: 108px 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.conditions__card--income::before {
-	content: '';
-	position: absolute;
-	background-image: url('/img/icons/Income.svg');
-	width: 30px;
-	height: 30px;
-	left: 120px;
-}
-
-.conditions__card--business::before {
-	content: '';
-	position: absolute;
-	background-image: url('/img/icons/Business.svg');
-	width: 30px;
-	height: 30px;
-	left: 120px;
-}
-
+.conditions__card--income::before,
 .conditions__card--discount::before {
 	content: '';
 	position: absolute;
-	background-image: url('/img/icons/Discount.svg');
+	background-image: url('/img/icons/Income.svg');
+	background-repeat: no-repeat;
 	width: 30px;
 	height: 30px;
-	left: 120px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.conditions__card--discount::before {
+	background-image: url('/img/icons/Discount.svg');
+}
+
+.conditions__card-icon {
+	margin-bottom: -30px;
 }
 
 .conditions__card-title {
