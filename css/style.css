@@ -1,3 +1,7 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
 	min-height: 100vh;
 	padding: 0 10px;
@@ -74,6 +78,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 60px 135px;
+	margin-bottom: 100px;
 }
 
 .conditions__items {
@@ -183,6 +188,154 @@ body {
 	margin-top: 15px;
 }
 
+.pictures {
+	font-family: 'Montserrat';
+	color: #333;
+	margin-bottom: 200px;
+}
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.pictures__content {
+	padding: 0 100px 70px 90px;
+}
+
+.pictures__content-subtitle {
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 2.8rem;
+	margin-bottom: 15px;
+}
+
+.pictures__content-text {
+	width: 735px;
+	font-weight: 400;
+	font-size: 1.7rem;
+	line-height: 2.7rem;
+	margin-bottom: 30px;
+}
+
+.pictures__content-items {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.pictures__footer {
+	background-color: #0079C8;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 50px 30px;
+}
+
+.pictures__footer-wrapper {
+	font-weight: 500;
+	color: #fff;
+}
+
+.pictures__footer-subtitle {
+	font-size: 2rem;
+	line-height: 2rem;
+	margin-bottom: 20px;
+}
+
+.pictures__footer-text {
+	width: 480px;
+	font-size: 3.5rem;
+	line-height: 4.4rem;
+}
+
+.pictures__footer-link {
+	background-color: #fff;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color:#0079C8;
+	padding: 20px 40px;
+	border-radius: 4px;
+	margin-top: 60px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.progress {
+	margin-bottom: 100px;
+}
+
+.progress__wrapper {
+	width: 370px;
+	font-family: 'Montserrat';
+	color: #061B36;
+	padding: 24px 32px;
+}
+
+.progress__wrapper-text {
+	color: #515151;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	margin-bottom: 8px;
+}
+
+.progress__wrapper-title {
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+
+.progress__wrapper-percent {
+	border-bottom: 4px solid #77BB2F;
+	padding-bottom: 4px;
+	margin: 24px 0;
+	position: relative;
+}
+
+.progress__wrapper-percent::before {
+	content: '';
+	position: absolute;
+	height: 4px;
+	background-color: #EEF3F7;
+	width: 54%;
+	bottom: -4px;
+	right: 0;
+}
+
+.progress__wrapper-percent span{
+	font-weight: 700;
+	font-size: 1.6rem;
+	color: #77BB2F;
+}
+
+.progress__wrapper-items {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.progress__wrapper-items + .progress__wrapper-items {
+	margin-top: 24px;
+}
+
+.progress__wrapper-item {
+	display: flex;
+}
+
+.progress__wrapper-item-subtitle {
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.progress__wrapper-item-progress {
+	font-weight: 400;
+	color: #515151;
+}
 
 @media (max-width: 1245px) {
 	.development__cards {
@@ -202,6 +355,46 @@ body {
 	.development__title {
 		width: 630px;
 		font-size: 36px;
+	}
+	.pictures__content{
+		width: fit-content;
+		padding: 0;
+	}
+	.pictures__content-items {
+		width: fit-content;
+		flex-direction: column;
+		align-items: start;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+	.pictures__content-subtitle {
+		font-size: 1.6rem;
+		line-height: 140%;
+	}
+	.pictures__content-text {
+		width: 500px;
+		font-size: 1.4em;
+		line-height: 150%;
+	}
+	.pictures__footer {
+		width: fit-content;
+		flex-direction: column;
+		align-items: start;
+	}
+	.pictures__footer-subtitle {
+		font-size: 1.6rem;
+		line-height: 100%;
+	}
+	.pictures__footer-text {
+		width: 350px;
+		font-size: 2.4rem;
+		line-height: 124%;
+	}
+	.pictures__footer-link {
+		padding: 10px 20px;
+		margin-top: 20px;
+		font-size: 1.4rem;
+		line-height: 100%;
 	}
 }
 
@@ -252,10 +445,34 @@ body {
 		padding: 10px 30px;
 	}
 	.conditions__cards {
-		grid-template-columns: 270px;
+		flex-direction: column;
 	}
 	.conditions__card--business {
 		padding: 22px;
+	}
+	.container {
+		padding: 0;
+	}
+	.pictures__content-subtitle {
+		font-size: 1.5rem;
+		line-height: 140%;
+	}
+	.pictures__content-text {
+		width: 290px;
+		font-size: 1.3rem;
+		line-height: 150%;
+	}
+	.pictures__footer {
+		padding: 15px;
+	}
+	.pictures__footer-subtitle {
+		font-size: 1.5rem;
+		line-height: 100%;
+	}
+	.pictures__footer-text {
+		width: 250px;
+		font-size: 2rem;
+		line-height: 124%;
 	}
 }
 
@@ -263,5 +480,11 @@ body {
 	.development__title {
 		width: 100px;
 		font-size: 16px;
+	}
+	.progress__wrapper {
+		width: 290px;
+		font-family: 'Montserrat';
+		color: #061B36;
+		padding: 24px 32px;
 	}
 }
