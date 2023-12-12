@@ -195,7 +195,7 @@ body {
 }
 
 .container {
-	width: 950px;
+	max-width: 950px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -357,9 +357,11 @@ body {
 		font-size: 36px;
 	}
 	.pictures__content{
+		width: fit-content;
 		padding: 0;
 	}
 	.pictures__content-items {
+		width: fit-content;
 		flex-direction: column;
 		align-items: start;
 		gap: 10px;
