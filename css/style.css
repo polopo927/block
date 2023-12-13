@@ -294,23 +294,29 @@ body {
 	padding-bottom: 4px;
 	margin: 24px 0;
 	position: relative;
-}
-
-.progress__wrapper-percent::before {
-	content: '';
-	position: absolute;
-	height: 4px;
-	background-color: #EEF3F7;
-	width: 54%;
-	bottom: -4px;
-	right: 0;
+	width: 100%;
 }
 
 .progress__wrapper-percent span{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -20px;
 	font-weight: 700;
 	font-size: 1.6rem;
 	color: #77BB2F;
 }
+
+.progress__wrapper-percent span::before {
+	content: '';
+	position: absolute;
+	height: 4px;
+	background-color: #EEF3F7;
+	width: 100%;
+	bottom: -9px;
+	right: 0;
+}
+
 
 .progress__wrapper-items {
 	display: flex;
@@ -411,6 +417,9 @@ body {
 	.development__card-text {
 		width: 230px;
 	}
+	.progress__wrapper-percent span::before {
+		bottom: -8px;
+	}
 }
 
 @media (max-width: 580px) {
@@ -473,6 +482,9 @@ body {
 		width: 250px;
 		font-size: 2rem;
 		line-height: 124%;
+	}
+	.progress__wrapper-percent span::before {
+		bottom: -9px;
 	}
 }
 
