@@ -79,6 +79,7 @@ body {
 	align-items: center;
 	padding: 60px 135px;
 	margin-bottom: 100px;
+
 }
 
 .conditions__items {
@@ -343,6 +344,7 @@ body {
 	color: #515151;
 }
 
+
 @media (max-width: 1245px) {
 	.development__cards {
 		grid-template-columns: 387px 387px;
@@ -455,10 +457,13 @@ body {
 	}
 	.conditions__cards {
 		flex-direction: column;
+		grid-template-columns: 270px;
+
 	}
 	.conditions__card--business {
 		padding: 22px;
 	}
+
 	.container {
 		padding: 0;
 	}
@@ -486,6 +491,7 @@ body {
 	.progress__wrapper-percent span::before {
 		bottom: -9px;
 	}
+
 }
 
 @media (max-width: 470px) {
